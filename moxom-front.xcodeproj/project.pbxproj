@@ -14,6 +14,8 @@
 		189B942E20F513C800FD2D3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189B942C20F513C800FD2D3A /* LaunchScreen.storyboard */; };
 		189B943920F513C800FD2D3A /* moxom_frontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B943820F513C800FD2D3A /* moxom_frontTests.swift */; };
 		189B944420F513C800FD2D3A /* moxom_frontUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B944320F513C800FD2D3A /* moxom_frontUITests.swift */; };
+		548B7C240E8D433A1C4523B6 /* libPods-moxom-front.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C5C3CA83BD52AEC3F5ADC4 /* libPods-moxom-front.a */; };
+		B1234EF12106D3C60082180F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B1234EF02106D3C60082180F /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13AC520E0B41902FF6F28ABF /* Pods-moxom-front.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moxom-front.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moxom-front/Pods-moxom-front.debug.xcconfig"; sourceTree = "<group>"; };
 		189B942020F513C400FD2D3A /* moxom-front.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "moxom-front.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189B942320F513C400FD2D3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189B942520F513C400FD2D3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		189B943F20F513C800FD2D3A /* moxom-frontUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "moxom-frontUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		189B944320F513C800FD2D3A /* moxom_frontUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moxom_frontUITests.swift; sourceTree = "<group>"; };
 		189B944520F513C800FD2D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C5C3CA83BD52AEC3F5ADC4 /* libPods-moxom-front.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-moxom-front.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1234EF02106D3C60082180F /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CD27B789B0ECEC5BB0DB0338 /* Pods-moxom-front.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moxom-front.release.xcconfig"; path = "Pods/Target Support Files/Pods-moxom-front/Pods-moxom-front.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				548B7C240E8D433A1C4523B6 /* libPods-moxom-front.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +84,13 @@
 		189B941720F513C400FD2D3A = {
 			isa = PBXGroup;
 			children = (
+				B1234EF02106D3C60082180F /* Podfile */,
 				189B942220F513C400FD2D3A /* moxom-front */,
 				189B943720F513C800FD2D3A /* moxom-frontTests */,
 				189B944220F513C800FD2D3A /* moxom-frontUITests */,
 				189B942120F513C400FD2D3A /* Products */,
+				7764B47B7791EE88F01B8773 /* Pods */,
+				1F3E702E896CE17A15CF3100 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +135,23 @@
 			path = "moxom-frontUITests";
 			sourceTree = "<group>";
 		};
+		1F3E702E896CE17A15CF3100 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55C5C3CA83BD52AEC3F5ADC4 /* libPods-moxom-front.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7764B47B7791EE88F01B8773 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13AC520E0B41902FF6F28ABF /* Pods-moxom-front.debug.xcconfig */,
+				CD27B789B0ECEC5BB0DB0338 /* Pods-moxom-front.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 189B944820F513C800FD2D3A /* Build configuration list for PBXNativeTarget "moxom-front" */;
 			buildPhases = (
+				FB50919E9F2984E81BE996F0 /* [CP] Check Pods Manifest.lock */,
 				189B941C20F513C400FD2D3A /* Sources */,
 				189B941D20F513C400FD2D3A /* Frameworks */,
 				189B941E20F513C400FD2D3A /* Resources */,
+				AE3F4EDB1B53CC2E744F9AAB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +260,7 @@
 			files = (
 				189B942E20F513C800FD2D3A /* LaunchScreen.storyboard in Resources */,
 				189B942B20F513C800FD2D3A /* Assets.xcassets in Resources */,
+				B1234EF12106D3C60082180F /* Podfile in Resources */,
 				189B942920F513C400FD2D3A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +280,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE3F4EDB1B53CC2E744F9AAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-moxom-front/Pods-moxom-front-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moxom-front/Pods-moxom-front-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB50919E9F2984E81BE996F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-moxom-front-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		189B941C20F513C400FD2D3A /* Sources */ = {
@@ -428,6 +499,7 @@
 		};
 		189B944920F513C800FD2D3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13AC520E0B41902FF6F28ABF /* Pods-moxom-front.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +518,7 @@
 		};
 		189B944A20F513C800FD2D3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD27B789B0ECEC5BB0DB0338 /* Pods-moxom-front.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

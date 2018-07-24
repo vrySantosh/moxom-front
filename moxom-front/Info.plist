@@ -18,8 +18,22 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Information Property List</key>
+	<dict>
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>googlechromes</string>
+			<string>comgooglemaps</string>
+		</array>
+	</dict>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string></string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
